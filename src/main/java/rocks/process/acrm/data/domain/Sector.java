@@ -21,7 +21,6 @@ public class Sector {
     @NotEmpty(message = "Please provide the location of the sector")
     private String sectorLoc;
     @OneToMany(mappedBy = "sector")
-    @JsonBackReference
     private List<Animal> animals;
 
     public Long getSectorId() {

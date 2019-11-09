@@ -53,6 +53,23 @@ public class ZooController {
         return ResponseEntity.created(location).body(animal);
     }
 
+    @PostMapping(path = "/keeper", consumes = "application/json", produces = "application/json")
+    public ResponseEntity<Keeper> registerKeeper(@RequestBody Keeper keeper) {
+        try {
+            keeperService.saveKeeper(keeper);
+        } catch (ConstraintViolationException e) {
+            throw new ResponseStatusException(HttpStatus.NOT_ACCEPTABLE, e.getConstraintViolations().iterator().next().getMessage());
+        } catch (Exception e) {
+            throw new ResponseStatusException(HttpStatus.CONFLICT, e.getMessage());
+        }
+
+        URI location = ServletUriComponentsBuilder
+                .fromCurrentRequest().path("/{keeperId}")
+                .buildAndExpand(keeper.getKeeperId()).toUri();
+
+        return ResponseEntity.created(location).body(keeper);
+    }
+
     //Get a List of all animals
     @GetMapping(path = "/animal" ,produces ="application/json")
     public List<Animal> getAllAnimals() {
@@ -83,6 +100,7 @@ public class ZooController {
         return ResponseEntity.ok(animal);
     }
 
+    //Todo this doesnt work anymore
     //Get all animals that are handled by a specific keeper
     @GetMapping(path= "/keeper/{keeperId}", produces = "application/json")
     public ResponseEntity<Keeper> getAllAnimalsFromKeeper(@PathVariable(value = "keeperId")String keeperId) {

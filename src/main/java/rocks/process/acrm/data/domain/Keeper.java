@@ -24,7 +24,6 @@ public class Keeper {
     @javax.persistence.Transient // will not be stored in DB
     private String remember;
     @OneToMany(mappedBy = "keeper")
-    @JsonManagedReference(value = "animal")
     private List<Animal> animals;
 
     public Long getKeeperId() {

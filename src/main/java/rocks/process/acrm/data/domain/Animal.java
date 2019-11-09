@@ -23,7 +23,7 @@ public class Animal {
     @JsonBackReference(value = "keeper")
     private Keeper keeper;
     @ManyToOne
-    @JsonManagedReference(value = "sector")
+    @JsonBackReference(value = "sector")
     private Sector sector;
 
     public Long getAnimalId() {
