@@ -46,29 +46,8 @@ SpringZoo is a small fictional CRM tool that let's zookeepers see and manage ani
 ```JSON
 {
   "age": "string",
-  "animalId": 0,
   "gender": "string",
-  "keeper": {
-    "animals": [
-      null
-    ],
-    "email": "string",
-    "keeperId": 0,
-    "name": "string",
-    "password": "string",
-    "remember": "string"
-  },
   "name": "string",
-  "sector": {
-    "animals": [
-      null
-    ],
-    "sectorId": 0,
-    "sectorLoc": "string",
-    "sectorName": "string",
-    "sectorSize": "string",
-    "sectorTemp": "string"
-  },
   "species": "string"
 }
 ```
@@ -79,35 +58,55 @@ SpringZoo is a small fictional CRM tool that let's zookeepers see and manage ani
 
 ```JSON
 {
-  "age": "string",
-  "animalId": 0,
-  "gender": "string",
-  "keeper": {
-    "animals": [
-      null
-    ],
-    "email": "string",
-    "keeperId": 0,
-    "name": "string",
-    "password": "string",
-    "remember": "string"
-  },
+  "animalId": 6,
   "name": "string",
-  "sector": {
-    "animals": [
-      null
-    ],
-    "sectorId": 0,
-    "sectorLoc": "string",
-    "sectorName": "string",
-    "sectorSize": "string",
-    "sectorTemp": "string"
-  },
-  "species": "string"
+  "species": "string",
+  "age": "string",
+  "gender": "string"
 }
 ```
 
 **Error Response** • *Code:* `404 NOT FOUND`
+
+**Path**: [`/api/keeper`](/api/keeper)
+
+```JSON
+
+{
+  "email": "string",
+  "name": "string",
+  "password": "string",
+  "remember": "string"
+}
+
+```
+• *Optional:* `...`
+
+**Success Response**  • *Code:* `200 OK` • *Sample Body:*
+
+```JSON
+
+{
+  "email": "string",
+  "name": "string",
+  "password": "string",
+  "remember": "string"
+}
+
+```
+
+**Error Response** • *Code:* `406`
+
+{
+  "timestamp": "2019-11-09T14:20:43.560+0000",
+  "status": 406,
+  "error": "Not Acceptable",
+  "message": "Please provide a valid e-mail.",
+  "path": "/api/keeper"
+}
+
+**Error Response** • *Code:* `404 NOT FOUND`
+
 
 ### Data Access / Persistence Layer
 
