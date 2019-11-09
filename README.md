@@ -114,7 +114,7 @@ SpringZoo is a small fictional CRM tool that let's zookeepers see and manage ani
 
 The `rocks.process.acrm.data.domain` package contains the following domain objects / entities including getters and setters:
 
-![](images/SpringZoo-Domain_Model.png)
+![](images/SpringZoo-Domain-Model.png)
 
 This would be the ERD representation of the domain model:
 
