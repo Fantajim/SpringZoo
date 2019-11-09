@@ -68,7 +68,10 @@ SpringZoo is a small fictional CRM tool that let's zookeepers see and manage ani
 
 **Error Response** • *Code:* `404 NOT FOUND`
 
+-------------------------------------------------------------------------------------------
+
 **Path**: [`/api/keeper`](/api/keeper)
+**Method:** `POST`
 
 ```JSON
 
