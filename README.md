@@ -25,14 +25,14 @@ SpringZoo is a small fictional CRM tool that let's zookeepers see and manage ani
 ### Use Case
 ![](images/SpringZoo-Use-Case.png)
 - **UC-1 [Login on SpringZoo]:** Keepers are able to log-in using an email address and password. As an extension, new keepers may register first. (**Not yet active**, I don't know how to realize this yet)
-- UC-2 [Register on SpringZoo]: Keepers can register to get an account (profile) to access the SpringZoo system.
-- UC-3 [Post animal]: Keepers can create data entries for animals.
-- UC-4 [Delete animal]: Keepers may delete data entries for animals. As an extension they can create animals (UC-3)
-- UC-5 [Patch animal]: Keepers may patch data entries for animals, this includes moving the animal entries to another sector and/or keeper. As an extension they can create animals (UC-3)
-- UC-6 [Show]: Keepers may retrieve Single animal data entries and Lists, this includes GetSingleAnimal, GetAllAnimals, GetAllAnimalsFromKeeper, GetAllAnimalsInSector. As an extension they can create animals (UC-3)
-- UC-7 [ShowAllKeepers]: Keepers may retrieve a complete List of other keepers.
-- UC-8 [GetAllSectors]: Keepers may retrieve a complete List of all Zoo sectors.
-- UC-9 [GetSector]: Keepery may retrieve a single sector. As an extension to retrieve a List of all the sectors (UC-8).
+- **UC-2 [Register on SpringZoo]:** Keepers can register to get an account (profile) to access the SpringZoo system.
+- **UC-3 [Post animal]:** Keepers can create data entries for animals.
+- **UC-4 [Delete animal]:** Keepers may delete data entries for animals. As an extension they can create animals (UC-3)
+- **UC-5 [Patch animal]:** Keepers may patch data entries for animals, this includes moving the animal entries to another sector and/or keeper. As an extension they can create animals (UC-3)
+- **UC-6 [Show]:** Keepers may retrieve Single animal data entries and Lists, this includes GetSingleAnimal, GetAllAnimals, GetAllAnimalsFromKeeper, GetAllAnimalsInSector. As an extension they can create animals (UC-3)
+- **UC-7 [ShowAllKeepers]:** Keepers may retrieve a complete List of other keepers.
+- **UC-8 [GetAllSectors]:** Keepers may retrieve a complete List of all Zoo sectors.
+- **UC-9 [GetSector]:** Keepery may retrieve a single sector. As an extension to retrieve a List of all the sectors (UC-8).
 
 ## Design
 
