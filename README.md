@@ -73,7 +73,7 @@ SpringZoo is a small fictional CRM tool that let's zookeepers see and manage ani
 ```JSON
 
 {
-  "email": "string",
+  "email": "email-string",
   "name": "string",
   "password": "string",
   "remember": "string"
@@ -87,7 +87,7 @@ SpringZoo is a small fictional CRM tool that let's zookeepers see and manage ani
 ```JSON
 
 {
-  "email": "string",
+  "email": "zoo@zoo.ch",
   "name": "string",
   "password": "string",
   "remember": "string"
@@ -97,6 +97,7 @@ SpringZoo is a small fictional CRM tool that let's zookeepers see and manage ani
 
 **Error Response** • *Code:* `406`
 
+```JSON
 {
   "timestamp": "2019-11-09T14:20:43.560+0000",
   "status": 406,
@@ -104,6 +105,7 @@ SpringZoo is a small fictional CRM tool that let's zookeepers see and manage ani
   "message": "Please provide a valid e-mail.",
   "path": "/api/keeper"
 }
+```
 
 **Error Response** • *Code:* `404 NOT FOUND`
 
