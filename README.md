@@ -23,7 +23,7 @@ Documentation for SpringZoo API including Swagger/OpenAPI
 SpringZoo is a small fictional tool that let's zookeepers see and manage animal data. This includes the sector where the animals are currently situated.
 
 ### Use Case
-![](images/A-CRM-Use-Case.png)
+![](images/SpringZoo-Use-Case.png)
 - UC-1 [Login on A-CRM]: Agents can log-in by entering an email address and password. As an extension, new agents my register first.
 - UC-2 [Register on A-CRM]: Agents can register to get an account (profile) to access the A-CRM system.
 - UC-3 [Edit a customer]: Agents can create, update and delete customers.
