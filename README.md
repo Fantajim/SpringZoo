@@ -124,7 +124,7 @@ This would be the ERD representation of the domain model:
 
 The `rocks.process.acrm.business.service` package contains classes of the following business services:
 
-![](images/business-service.png)
+![](images/SpringZoo-Business-Layer.png)
 
 
 ### Service Layer / API
