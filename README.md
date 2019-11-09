@@ -24,10 +24,15 @@ SpringZoo is a small fictional tool that let's zookeepers see and manage animal 
 
 ### Use Case
 ![](images/SpringZoo-Use-Case.png)
-- UC-1 [Login on A-CRM]: Agents can log-in by entering an email address and password. As an extension, new agents my register first.
-- UC-2 [Register on A-CRM]: Agents can register to get an account (profile) to access the A-CRM system.
-- UC-3 [Edit a customer]: Agents can create, update and delete customers.
-- UC-4 [Show a customer list]: Agents can get an overview over their customers based on a customer list. As an extension they can create, update and delete customers (UC-3).
+- UC-1 [Login on SpringZoo]: Keepers are able to log-in using an email address and password. As an extension, new keepers may register first.
+- UC-2 [Register on SpringZoo]: Keepers can register to get an account (profile) to access the SpringZoo system.
+- UC-3 [Post animal]: Keepers can create data entries for animals.
+- UC-4 [Delete animal]: Keepers may delete data entries for animals. As an extension they can create animals (UC-3)
+- UC-5 [Patch animal]: Keepers may patch data entries for animals, this includes moving the animal entries to another sector and/or keeper. As an extension they can create animals (UC-3)
+- UC-6 [Show]: Keepers may retrieve Single animal data entries and Lists, this includes GetSingleAnimal, GetAllAnimals, GetAllAnimalsFromKeeper, GetAllAnimalsInSector. As an extension they can create animals (UC-3)
+- UC-7 [ShowAllKeepers]: Keepers may retrieve a complete List of other keepers.
+- UC-8 [GetAllSectors]: Keepers may retrieve a complete List of all Zoo sectors.
+- UC-9 [GetSector]: Keepery may retrieve a single sector. As an extension to retrieve a List of all the sectors (UC-8).
 
 ## Design
 
