@@ -1,6 +1,6 @@
-# DigiPR Spring Boot API Documentation Example
+# SpringZoo Boot API Documentation
 
-This example illustrates how an API can be documented including Swagger/OpenAPI.
+Documentation for SpringZoo API including Swagger/OpenAPI
 
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
 [![Deploy to Heroku](https://img.shields.io/badge/deploy%20to-Heroku-6762a6.svg?longCache=true)](https://heroku.com/deploy)
@@ -20,7 +20,7 @@ This example illustrates how an API can be documented including Swagger/OpenAPI.
 
 ### Scenario
 
-A-CRM (Agency Customer-Relationship-Management) is the smallest possible and lightweight demonstration tool that allows agents to manage their customer data. Agents have an own access to their customer data.
+SpringZoo is a small fictional tool that let's zookeepers see and manage animal data. This includes the sector where the animals are currently situated.
 
 ### Use Case
 ![](images/A-CRM-Use-Case.png)
