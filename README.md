@@ -22,6 +22,9 @@ Documentation for SpringZoo API including Swagger/OpenAPI
 
 SpringZoo is a small fictional CRM tool that let's zookeepers see and manage animal data. This includes the sector where the animals are currently situated.
 
+It is currently deployed at Heroku at this location:
+https://springzoo.herokuapp.com/swagger-ui.html#
+
 ### Use Case
 ![](images/SpringZoo-Use-Case.png)
 - **UC-1 [Login on SpringZoo]:** Keepers are able to log-in using an email address and password. As an extension, new keepers may register first. (**Not yet active, I don't know how to realize this yet**). As an extension to register (UC-2).
