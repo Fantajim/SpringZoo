@@ -37,7 +37,7 @@ SpringZoo is a small fictional tool that let's zookeepers see and manage animal 
 ## Design
 
 ### Endpoint Prototype
-**Path**: [`/api/customer`](/api/customer) 
+**Path**: [`/api/animal`](/api/customer) 
 
 **Method:** `POST`
 
@@ -45,20 +45,31 @@ SpringZoo is a small fictional tool that let's zookeepers see and manage animal 
 
 ```JSON
 {
-  "agent": {
-    "customers": [
+  "age": "string",
+  "animalId": 0,
+  "gender": "string",
+  "keeper": {
+    "animals": [
       null
     ],
     "email": "string",
-    "id": 0,
+    "keeperId": 0,
     "name": "string",
     "password": "string",
     "remember": "string"
   },
-  "email": "string",
-  "id": 0,
-  "mobile": "string",
-  "name": "string"
+  "name": "string",
+  "sector": {
+    "animals": [
+      null
+    ],
+    "sectorId": 0,
+    "sectorLoc": "string",
+    "sectorName": "string",
+    "sectorSize": "string",
+    "sectorTemp": "string"
+  },
+  "species": "string"
 }
 ```
 
@@ -68,20 +79,31 @@ SpringZoo is a small fictional tool that let's zookeepers see and manage animal 
 
 ```JSON
 {
-  "agent": {
-    "customers": [
+  "age": "string",
+  "animalId": 0,
+  "gender": "string",
+  "keeper": {
+    "animals": [
       null
     ],
     "email": "string",
-    "id": 0,
+    "keeperId": 0,
     "name": "string",
     "password": "string",
     "remember": "string"
   },
-  "email": "string",
-  "id": 0,
-  "mobile": "string",
-  "name": "string"
+  "name": "string",
+  "sector": {
+    "animals": [
+      null
+    ],
+    "sectorId": 0,
+    "sectorLoc": "string",
+    "sectorName": "string",
+    "sectorSize": "string",
+    "sectorTemp": "string"
+  },
+  "species": "string"
 }
 ```
 
