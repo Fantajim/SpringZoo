@@ -118,7 +118,7 @@ The `rocks.process.acrm.data.domain` package contains the following domain objec
 
 This would be the ERD representation of the domain model:
 
-![](images/A-CRM-ERD.png)
+![](images/SpringZoo-ERD.png)
 
 ### Business Layer
 
