@@ -1,6 +1,6 @@
 #Grab the alpine image with jdk-8
 FROM openjdk:8-jre-alpine
-MAINTAINER Andreas Martin <andreas.martin@andreasmartin.ch>
+MAINTAINER Florian Lang <florian.lang@students.fhnw.ch>
 # Add our code
 ARG JAR_FILE=target/*.jar
 ADD ${JAR_FILE} app.jar
