@@ -131,7 +131,7 @@ The `rocks.process.acrm.business.service` package contains classes of the follow
 
 On the service layer, the API for customer management has been realised using the REST style as depicted in the following:
 
-![](images/api-endpoint-vp.png)
+![](images/SpringZoo-API-VP.png)
 
 Further can be seen using the Swagger-UI.
 
