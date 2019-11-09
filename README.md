@@ -20,12 +20,12 @@ Documentation for SpringZoo API including Swagger/OpenAPI
 
 ### Scenario
 
-SpringZoo is a small fictional tool that let's zookeepers see and manage animal data. This includes the sector where the animals are currently situated.
+SpringZoo is a small fictional CRM tool that let's zookeepers see and manage animal data. This includes the sector where the animals are currently situated.
 
 ### Use Case
 ![](images/SpringZoo-Use-Case.png)
-- UC-1 [Login on SpringZoo]: Keepers are able to log-in using an email address and password. As an extension, new keepers may register first.
-- UC-2 [Register on SpringZoo]: Keepers can register to get an account (profile) to access the SpringZoo system.
+- UC-1 [Login on SpringZoo]: Keepers are able to log-in using an email address and password. As an extension, new keepers may register first. (Not yet active)
+- UC-2 [Register on SpringZoo]: Keepers can register to get an account (profile) to access the SpringZoo system. (Not yet active)
 - UC-3 [Post animal]: Keepers can create data entries for animals.
 - UC-4 [Delete animal]: Keepers may delete data entries for animals. As an extension they can create animals (UC-3)
 - UC-5 [Patch animal]: Keepers may patch data entries for animals, this includes moving the animal entries to another sector and/or keeper. As an extension they can create animals (UC-3)
