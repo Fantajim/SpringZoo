@@ -64,8 +64,7 @@ public class AnimalService {
 
     @PostConstruct
     private void init() throws Exception {
-
-        if (animalRepository.findAll().size() < 5) {
+        if (animalRepository.findByName("Caesar") == null) {
             Animal animal = new Animal();
             animal.setName("Caesar");
             animal.setSpecies("Ape");
@@ -73,7 +72,8 @@ public class AnimalService {
             animal.setGender("male");
             animal.setSector(sectorService.getSector(4L));
             this.editAnimal(animal);
-
+        }
+        if (animalRepository.findByName("King Kong") == null) {
             Animal animal2 = new Animal();
             animal2.setName("King Kong");
             animal2.setSpecies("Ape");
@@ -81,7 +81,9 @@ public class AnimalService {
             animal2.setGender("male");
             animal2.setSector(sectorService.getSector(4L));
             this.editAnimal(animal2);
+        }
 
+        if (animalRepository.findByName("Ginny") == null) {
             Animal animal3 = new Animal();
             animal3.setName("Ginny");
             animal3.setSpecies("Rat");
@@ -89,7 +91,9 @@ public class AnimalService {
             animal3.setGender("female");
             animal3.setSector(sectorService.getSector(2L));
             this.editAnimal(animal3);
+        }
 
+        if (animalRepository.findByName("Chester") == null) {
             Animal animal4 = new Animal();
             animal4.setName("Chester");
             animal4.setSpecies("Penguin");
@@ -98,7 +102,9 @@ public class AnimalService {
             animal4.setKeeper(keeperService.getKeeper(2L));
             animal4.setSector(sectorService.getSector(3L));
             this.editAnimal(animal4);
+        }
 
+        if (animalRepository.findByName("Jessica") == null) {
             Animal animal5 = new Animal();
             animal5.setName("Jessica");
             animal5.setSpecies("Penguin");
