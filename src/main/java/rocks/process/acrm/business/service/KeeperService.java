@@ -44,20 +44,23 @@ public class KeeperService {
         return keeperRepository.findAll();
     }
 
+
     @PostConstruct
     private void init() throws Exception {
-        Keeper keeper = new Keeper();
-        keeper.setName("Boss");
-        keeper.setEmail("boss@zoo.ch");
-        keeper.setPassword("password1");
-        keeper.setRemember("default");
-        this.saveKeeper(keeper);
+        if (keeperRepository.findAll().size() < 2) {
+            Keeper keeper = new Keeper();
+            keeper.setName("Boss");
+            keeper.setEmail("boss@zoo.ch");
+            keeper.setPassword("password1");
+            keeper.setRemember("default");
+            this.saveKeeper(keeper);
 
-        Keeper keeper2 = new Keeper();
-        keeper2.setName("Trainee");
-        keeper2.setEmail("trainee@zoo.ch");
-        keeper2.setPassword("password1");
-        keeper2.setRemember("default");
-        this.saveKeeper(keeper2);
+            Keeper keeper2 = new Keeper();
+            keeper2.setName("Trainee");
+            keeper2.setEmail("trainee@zoo.ch");
+            keeper2.setPassword("password1");
+            keeper2.setRemember("default");
+            this.saveKeeper(keeper2);
+        }
     }
 }

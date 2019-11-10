@@ -64,51 +64,49 @@ public class AnimalService {
 
     @PostConstruct
     private void init() throws Exception {
-        Animal animal = new Animal();
-        animal.setName("Caesar");
-        animal.setSpecies("Ape");
-        animal.setAge("20");
-        animal.setGender("male");
-        animal.setSector(sectorService.getSector(4L));
-        this.editAnimal(animal);
 
-        Animal animal2 = new Animal();
-        animal2.setName("King Kong");
-        animal2.setSpecies("Ape");
-        animal2.setAge("21");
-        animal2.setGender("male");
-        animal2.setSector(sectorService.getSector(4L));
-        this.editAnimal(animal2);
+        if (animalRepository.findAll().size() < 5) {
+            Animal animal = new Animal();
+            animal.setName("Caesar");
+            animal.setSpecies("Ape");
+            animal.setAge("20");
+            animal.setGender("male");
+            animal.setSector(sectorService.getSector(4L));
+            this.editAnimal(animal);
 
-        Animal animal3 = new Animal();
-        animal3.setName("Ginny");
-        animal3.setSpecies("Rat");
-        animal3.setAge("3");
-        animal3.setGender("female");
-        animal3.setSector(sectorService.getSector(2L));
-        this.editAnimal(animal3);
+            Animal animal2 = new Animal();
+            animal2.setName("King Kong");
+            animal2.setSpecies("Ape");
+            animal2.setAge("21");
+            animal2.setGender("male");
+            animal2.setSector(sectorService.getSector(4L));
+            this.editAnimal(animal2);
 
-        Animal animal4 = new Animal();
-        animal4.setName("Chester");
-        animal4.setSpecies("Penguin");
-        animal4.setAge("5");
-        animal4.setGender("male");
-        animal4.setKeeper(keeperService.getKeeper(2L));
-        animal4.setSector(sectorService.getSector(3L));
-        this.editAnimal(animal4);
+            Animal animal3 = new Animal();
+            animal3.setName("Ginny");
+            animal3.setSpecies("Rat");
+            animal3.setAge("3");
+            animal3.setGender("female");
+            animal3.setSector(sectorService.getSector(2L));
+            this.editAnimal(animal3);
 
-        Animal animal5 = new Animal();
-        animal5.setName("Jessica");
-        animal5.setSpecies("Penguin");
-        animal5.setAge("6");
-        animal5.setGender("female");
-        animal5.setKeeper(keeperService.getKeeper(2L));
-        animal5.setSector(sectorService.getSector(3L));
-        this.editAnimal(animal5);
+            Animal animal4 = new Animal();
+            animal4.setName("Chester");
+            animal4.setSpecies("Penguin");
+            animal4.setAge("5");
+            animal4.setGender("male");
+            animal4.setKeeper(keeperService.getKeeper(2L));
+            animal4.setSector(sectorService.getSector(3L));
+            this.editAnimal(animal4);
 
-
+            Animal animal5 = new Animal();
+            animal5.setName("Jessica");
+            animal5.setSpecies("Penguin");
+            animal5.setAge("6");
+            animal5.setGender("female");
+            animal5.setKeeper(keeperService.getKeeper(2L));
+            animal5.setSector(sectorService.getSector(3L));
+            this.editAnimal(animal5);
+        }
     }
-
-
-
 }
