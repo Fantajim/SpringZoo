@@ -27,7 +27,7 @@ https://springzoo.herokuapp.com/swagger-ui.html#
 
 ### Use Case
 ![](images/SpringZoo-Use-Case.png)
-- **UC-1 [Login on SpringZoo]:** Keepers are able to log-in using an email address and password. As an extension, new keepers may register first. (**Not yet active, I don't know how to realize this yet**). As an extension to register (UC-2).
+- **UC-1 [Login on SpringZoo]:** Keepers are able to log-in using an email address and password (**Not yet active, I don't know how to realize this yet**). As an extension, new keepers may register first (UC-2).
 - **UC-2 [Register on SpringZoo]:** Keepers can register to get an account (profile) to access the SpringZoo system.
 - **UC-3 [Post animal]:** Keepers can create data entries for animals.
 - **UC-4 [Delete animal]:** Keepers may delete data entries for animals. As an extension they can create animals (UC-3)
