@@ -149,4 +149,4 @@ This spring boot application can be deployed to Heroku by adding the following `
 web: java -Dserver.port=$PORT $JAVA_OPTS -jar /target/*.jar
 ```
 
-Finally the Swagger-UI can be access using the Heroku app specific address such as: `https://***.herokuapp.com/swagger-ui.html`
+Finally the Swagger-UI can be access using the Heroku app specific address such as: `https://springzoo.herokuapp.com/swagger-ui.html`
